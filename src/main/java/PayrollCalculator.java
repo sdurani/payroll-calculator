@@ -1,2 +1,28 @@
-public class PayrollCalcultor {
+import java.util.Scanner;
+
+public class PayrollCalculator {
+
+    public static void main(String[] args) {
+
+        Scanner read = new Scanner(System.in);
+
+        // User inputs name.
+        System.out.println("What is your name?");
+        String userName = read.nextLine();
+
+        // User inputs hours worked.
+        System.out.println("How many hours have you worked?");
+        float hoursWorked = read.nextFloat();
+
+        // User inputs pay rate.
+        System.out.println("What is your pay rate?");
+        float payRate = read.nextFloat();
+
+        // Calculate gross pay.
+        float grossPay = hoursWorked * payRate;
+
+        // Display info.
+        System.out.println(userName + ", " + "your gross pay is " + "$" + grossPay);
+
+    }
 }
