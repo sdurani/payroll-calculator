@@ -23,6 +23,7 @@ public class PayrollCalculator {
 
         // Display info.
         System.out.println(userName + ", " + "your gross pay is " + "$" + grossPay);
+        System.out.printf("%s, your gross pay is $%.2f ", userName, grossPay);
 
     }
 }
